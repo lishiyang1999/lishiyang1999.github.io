@@ -110,7 +110,7 @@
       "(May all your wishes come true!)"
   ];
 
-  // Sets text content as random phrase from arrays
+  /* Sets text content as random phrase from arrays
   pinyin1.textContent = p1[Math.floor(random * p1.length)];
   pinyin2.textContent = p2[Math.floor(random * p2.length)];
   pinyin3.textContent = p3[Math.floor(random * p3.length)];
@@ -120,14 +120,25 @@
   phraseChinese3.textContent = phrasesC3[Math.floor(random * phrasesC3.length)];
   phraseChinese4.textContent = phrasesC4[Math.floor(random * phrasesC4.length)];
   phraseEnglish.textContent = phrasesE[Math.floor(random * phrasesE.length)];
-
+  */
+    
+  pinyin1.textContent = p1[0];
+  pinyin2.textContent = p2[0];
+  pinyin3.textContent = p3[0];
+  pinyin4.textContent = p4[0];
+  phraseChinese1.textContent = phrasesC1[0];
+  phraseChinese2.textContent = phrasesC2[0];
+  phraseChinese3.textContent = phrasesC3[0];
+  phraseChinese4.textContent = phrasesC4[0];
+  phraseEnglish.textContent = phrasesE[0];   
+    
   var onClick = function() {
       var random = Math.random();
-      pinyin1.textContent = p1[Math.floor(10000000 * p1.length)];
+      pinyin1.textContent = p1[Math.floor(random * p1.length)];
       pinyin2.textContent = p2[Math.floor(random * p2.length)];
       pinyin3.textContent = p3[Math.floor(random * p3.length)];
       pinyin4.textContent = p4[Math.floor(random * p4.length)];
-      phraseChinese1.textContent = phrasesC1[Math.floor(10000000 * phrasesC1.length)];
+      phraseChinese1.textContent = phrasesC1[Math.floor(random * phrasesC1.length)];
       phraseChinese2.textContent = phrasesC2[Math.floor(random * phrasesC2.length)];
       phraseChinese3.textContent = phrasesC3[Math.floor(random * phrasesC3.length)];
       phraseChinese4.textContent = phrasesC4[Math.floor(random * phrasesC4.length)];
